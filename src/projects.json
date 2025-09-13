@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Project 1",
+    "description": "This is the first project.",
+    "technologies": ["React", "Node.js"],
+    "githubLink": "https://github.com",
+    "demoLink": "https://example.com"
+  },
+  {
+    "id": 2,
+    "name": "Project 2",
+    "description": "This is the second project.",
+    "technologies": ["Angular", "Firebase"],
+    "githubLink": "https://github.com",
+    "demoLink": "https://example.com"
+  }
+]
