@@ -6,5 +6,9 @@
   "home": {
     "welcome": "Welcome to my portfolio!",
     "intro": "This is a space where I showcase my projects and skills."
+  },
+  "nav": {
+    "home": "Home",
+    "projects": "Projects"
   }
 }

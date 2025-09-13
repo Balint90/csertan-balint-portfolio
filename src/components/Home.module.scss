@@ -1,4 +1,20 @@
 .home {
-  padding: 2rem;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  min-height: 80vh;
+}
+
+.textContainer {
+  flex: 1;
+  padding-right: 2rem;
+  text-align: left;
+  min-width: 0;
+}
+
+.sceneContainer {
+  flex: 1;
+  height: 500px;
+  min-width: 0;
 }

@@ -1,7 +1,16 @@
 .switcher {
   button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
     margin: 5px;
     padding: 5px 10px;
     cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: white;
+      color: #090979;
+    }
   }
 }

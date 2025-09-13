@@ -6,5 +6,9 @@
   "home": {
     "welcome": "Üdvözöllek a portfóliómban!",
     "intro": "Itt bemutatom a projektjeimet és a képességeimet."
+  },
+  "nav": {
+    "home": "Kezdőlap",
+    "projects": "Projektek"
   }
 }
