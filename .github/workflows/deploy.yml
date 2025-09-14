@@ -41,11 +41,12 @@ jobs:
           path: build
 
       - name: Deploy to FTP
-        uses: git-ftp/action@v1.1.0
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./build/
-          server-dir: ${{ secrets.FTP_REMOTE_PATH }}
-          # Optional: delete-remote: true # Uncomment if you want to delete remote files not present locally
+        env:
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_USER: ${{ secrets.FTP_USER }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_REMOTE_PATH: ${{ secrets.FTP_REMOTE_PATH }}
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y lftp
+          lftp -c "open -u $FTP_USER,$FTP_PASSWORD $FTP_HOST; mirror -rev --delete --verbose ./build $FTP_REMOTE_PATH"
