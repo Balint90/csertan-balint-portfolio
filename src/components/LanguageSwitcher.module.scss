@@ -1,16 +1,16 @@
 .switcher {
   button {
     background-color: transparent;
-    border: 1px solid white;
-    color: white;
+    border: 1px solid var(--text-color); /* Use CSS variable */
+    color: var(--text-color); /* Use CSS variable */
     margin: 5px;
     padding: 5px 10px;
     cursor: pointer;
     transition: all 0.3s ease;
 
     &:hover {
-      background-color: white;
-      color: #090979;
+      background-color: var(--text-color); /* Use CSS variable */
+      color: var(--background-color); /* Use CSS variable */
     }
   }
 }

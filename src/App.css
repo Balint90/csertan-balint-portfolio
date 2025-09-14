@@ -1,3 +1,17 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif; /* Use the same font as header */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for theme change */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -6,4 +20,28 @@
 
 .content {
   flex: 1;
+}
+
+/* Light theme variables */
+body.light {
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --primary-color: #007bff;
+  --secondary-background: #f8f9fa;
+  --border-color: #dee2e6;
+}
+
+/* Dark theme variables */
+body.dark {
+  --background-color: #282c34;
+  --text-color: #f8f8f2;
+  --primary-color: #61dafb;
+  --secondary-background: #3a3f4b;
+  --border-color: #44475a;
+}
+
+/* Apply variables */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
 }

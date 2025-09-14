@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import styles from './Header.module.scss';
 import LanguageSwitcher from './LanguageSwitcher';
+import ThemeToggle from './ThemeToggle'; // Import ThemeToggle
 
 const Header = () => {
   const { t } = useTranslation();
@@ -11,6 +12,7 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.langSwitcherWrapper}>
         <LanguageSwitcher />
+        <ThemeToggle /> {/* Add ThemeToggle */}
       </div>
       <h1>{t('header.title')}</h1>
       <p>{t('header.subtitle')}</p>

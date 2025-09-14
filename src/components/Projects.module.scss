@@ -1,5 +1,5 @@
 .projects {
-  background-color: #f4f4f4;
+  background-color: var(--secondary-background); /* Use CSS variable */
   padding: 2rem;
   text-align: center;
 }
@@ -12,8 +12,8 @@
 }
 
 .project {
-  background-color: white;
-  border: 1px solid #ddd;
+  background-color: var(--background-color); /* Use CSS variable */
+  border: 1px solid var(--border-color); /* Use CSS variable */
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
@@ -27,16 +27,18 @@
 
   h3 {
     margin-bottom: 1rem;
+    color: var(--text-color); /* Use CSS variable */
   }
 
   p {
     margin-bottom: 1rem;
+    color: var(--text-color); /* Use CSS variable */
   }
 
   a {
     margin-right: 1rem;
     text-decoration: none;
-    color: #090979;
+    color: var(--primary-color); /* Use CSS variable */
     font-weight: bold;
 
     &:hover {
@@ -46,8 +48,8 @@
 }
 
 .tech {
-  background-color: #e0e0e0;
-  color: #333;
+  background-color: var(--border-color); /* Use CSS variable */
+  color: var(--text-color); /* Use CSS variable */
   padding: 0.3rem 0.6rem;
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
