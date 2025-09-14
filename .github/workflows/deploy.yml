@@ -41,7 +41,7 @@ jobs:
           path: build
 
       - name: Deploy to FTP
-        uses: SamKirkland/FTP-Deploy@0b10020e02227707980200000000000000000000
+        uses: git-ftp/action@v1.1.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
