@@ -3,7 +3,10 @@
     "id": 1,
     "name": "Project 1",
     "description": "This is the first project.",
-    "technologies": ["React", "Node.js"],
+    "technologies": [
+      "React",
+      "Node.js"
+    ],
     "githubLink": "https://github.com",
     "demoLink": "https://example.com"
   },
@@ -11,8 +14,23 @@
     "id": 2,
     "name": "Project 2",
     "description": "This is the second project.",
-    "technologies": ["Angular", "Firebase"],
+    "technologies": [
+      "Angular",
+      "Firebase"
+    ],
     "githubLink": "https://github.com",
     "demoLink": "https://example.com"
+  },
+  {
+    "id": 3,
+    "name": "Új Projekt Neve",
+    "description": "Ez egy rövid leírás az új projektről, amit csináltál.",
+    "technologies": [
+      "React",
+      "Node.js",
+      "MongoDB"
+    ],
+    "githubLink": "https://github.com/a-te-felhasznaloneved/uj-projekt",
+    "demoLink": "https://uj-projekt-demo.vercel.app"
   }
 ]
